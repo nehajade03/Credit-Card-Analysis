@@ -63,8 +63,13 @@ The success of this pilot project and the acquisition of the full project depend
 
 ## **Data Analysis (DAX)**
  - avg income utilization % = AVERAGE('dim_customers'[Avg_income_utilization%])
+ - TotalCreditCard Spending = CALCULATE([Total_Spend],fact_spends[payment_type] = "Credit Card")
+ - Credit Card% = ([TotalCreditCard Spending]/[Total_Spend])*100
+ - Average Spends = AVERAGE('fact_spends'[spend])
+ - Total_Spend = SUM('fact_spends'[spend])
 
 ## **Data Visualization (Dashboard)**
+
 ## Dashboard:
 
 
