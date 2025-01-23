@@ -4,7 +4,7 @@
 
 - [Problem Statement](#problem-statement)
 - [Datasource](#data-source)
-- [Data Preparation](#data-preparation)
+- [Data Cleaning and Data Transformation](#data-cleaning-and-data-transformation)
 - [Data Analysis (DAX)](#data-analysis-dax)
 - [Data Visualization Dashboard](#data-visualization-dashboard)
 - [Insights](#insights)
@@ -53,7 +53,7 @@ The success of this pilot project and the acquisition of the full project depend
   - `Payment_type`: The payment method used (e.g., Credit Card, Debit Card, UPI, etc.).
   - `category`: The spending category (e.g., Travel, Dining, Groceries, etc.).
     
-## **Data cleaning & data transformation**
+## **Data Cleaning and Data Transformation**
 - Checked for null and duplicate values
 - Categorized average income into three categories: low, middle, and high (conditional column).
 - Created a custom column, payment category, to classify payment types into card and digital.
@@ -68,7 +68,7 @@ The success of this pilot project and the acquisition of the full project depend
    
  - TotalCreditCard Spending = CALCULATE([Total_Spend],fact_spends[payment_type] = "Credit Card")
    
- - Credit Card% = ([TotalCreditCard Spending]/[Total_Spend])*100
+ - Credit Card% = ([TotalCreditCard Spending]/[Total_Spend])
    
  - Average Spends = AVERAGE('fact_spends'[spend])
    
@@ -132,6 +132,39 @@ The bank serves 4,000 customers across 5 cities, indicating a moderate customer 
   
 - City Income vs. Spending:Mumbai leads not only in the number of customers but also in average spending (₹26,598.40), reflecting a strong economic engagement.
     In contrast, Chennai has the lowest average spending at ₹15,961.53, correlating with its lower income utility percentage.
+
+## **Recommendations** 
+
+﻿**High-Earning Segments:**
+
+    For business owners and customers aged 45+, offer higher credit limits to align with their high earning and spending potential. Provide premium credit cards with added benefits such as higher reward rates, concierge services, or travel perks.
+
+
+**Younger Customers:**
+
+    For 21–24 years old, introduce starter credit cards with lower credit limits, manageable interest rates, and educational materials on credit usage to promote financial responsibility.
+
+
+**Increase Credit Card Adoption:**
+
+    Educate customers aged 25–34, who are the most active credit card users (46.61%), about the benefits of higher credit utilization ratios for rewards and perks. Offer welcome bonuses or fee waivers to encourage adoption among new users.
+
+
+**Seasonal Campaigns:**
+
+    Launch interest-free EMIs or cashback offers during peak spending months (e.g., August to September) to increase credit card usage in categories like electronics, groceries, and entertainment.
+
+
+**Spending Categories:**
+
+    Provide higher reward rates (e.g., 5% cashback) for top categories like electronics (12.36%) and entertainment to encourage higher spending on credit cards.
+    Introduce promotional cashback or discounts for food and Entertainment, which currently have lower credit card spending, to balance category-wise credit utilization.
+
+
+**Technologies Used**
+
+    Tools: Power BI for visualization, Excel and DAX for calculations.
+
 
 
 
