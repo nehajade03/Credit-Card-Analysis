@@ -12,6 +12,7 @@
 
 
 ## **Problem Statement**
+
 Mitron Bank, a legacy financial institution headquartered in Hyderabad, seeks to launch a new line of credit cards to expand its product offerings and market presence. To evaluate the feasibility and potential success of this initiative, the bank has partnered with AtliQ Data Services for a pilot project.
 
 AtliQ Data Services has been tasked with analyzing a sample dataset of 4,000 customers from five cities, containing details on their online spending and other demographic and behavioral attributes. The goal is to uncover actionable insights and trends that can help Mitron Bank tailor its credit card offerings to meet customer needs and align with market trends.
@@ -31,9 +32,10 @@ The success of this pilot project and the acquisition of the full project depend
                 `Fact_Spend.csv`
 - **Description:** Dataset provided by Mitron Bank for pilot analysis of 4,000 customers across five cities.
 **Datasets** 
--     Fact_spend: Details about spending behavior, including customer ID, spending month, payment type, spending, and spending category.
+- Fact_spend: Details about spending behavior, including customer ID, spending month, payment type, spending, and spending category.
     Dim_customer: Customer details, such as customer ID, gender, city, age group, average income (for a period of 6 months), marital status, and occupation.
-- **Columns:**
+  
+ **Columns:**
   - `Customer_ID`: Unique identifier for each customer.
   - `Age_group`: Age group of the customer.
   - `Gender`: Gender of the customer (`Male`, `Female`).
@@ -63,9 +65,13 @@ The success of this pilot project and the acquisition of the full project depend
 
 ## **Data Analysis (DAX)**
  - avg income utilization % = AVERAGE('dim_customers'[Avg_income_utilization%])
+   
  - TotalCreditCard Spending = CALCULATE([Total_Spend],fact_spends[payment_type] = "Credit Card")
+   
  - Credit Card% = ([TotalCreditCard Spending]/[Total_Spend])*100
+   
  - Average Spends = AVERAGE('fact_spends'[spend])
+   
  - Total_Spend = SUM('fact_spends'[spend])
 
 ## **Data Visualization (Dashboard)**
@@ -75,5 +81,58 @@ The success of this pilot project and the acquisition of the full project depend
 
 
 ## **Insights**
+
+Key Findings from the Data Analysis
+The bank serves 4,000 customers across 5 cities, indicating a moderate customer base focused on urban regions.
+
+**Customer Demographics**
+- Male customers dominate at 65%, while female customers make up 35%.
+    
+- Customers aged 45+ earn the highest (~₹60K), indicating financial stability due to established careers or businesses.
+    
+- Customer distribution by city reveals significant concentrations in metropolitan areas, with Mumbai having the highest number of customers at 1,078.
+    
+- Business Owners: Highest earners (~₹70.09K) and represent a critical segment for wealth management or premium credit cards.
+
+**Spending Behavior**
+
+- Mumbai has the highest spending at ₹115M, followed by Delhi NCR (₹76M) and Bengaluru (₹69M).
+    
+- Customers aged 45+ and 35-44 spend the most, averaging ₹55K and ₹52K, respectively.
+    
+- Younger age groups (21-24) spend the least, averaging ₹21K.
+    
+- Spending Categories:Bills account for the largest spending category (19.76%), followed by Groceries (16.29%) and Electronics (12.36%).
+    
+- Monthly Spending Trend:Monthly spending has increased significantly from August (10%) to September (21.84%), indicating seasonal or promotional spending patterns.
+  
+- Salaried IT employees have the highest credit card spending (₹101,405).
+
+**Payment Behavior** 
+
+ - Credit Card Usage:Credit Card usage stands at 40.73% among all payment methods, highlighting it as a preferred choice.
+    
+ - Credit card usage percentages are similar across major cities, with Chennai at 42%, followed by Delhi NCR, Hyderabad, Mumbai, and Bengaluru, all around 40–42%.
+    
+ - Customer aged 25- 34 are the most active Credit card users with around 47% using this method.
+    
+ - Category-Specific Credit Card Spending:Electronics and Entertainment have the highest proportion of spending via credit cards. Food and Groceries account for lower usage of credit card.
+
+**Income Utilities %** 
+
+- Mumbai has the highest number of customers (1,078), with an average income utility percentage of 51.58%, the highest among all cities.
+
+- Delhi NCR follows with 744 customers and an average income utility of 48.09%.
+
+- Average Income Utilities by Occupation: Salaried IT employees exhibit the highest income utility percentage at 50.93% , Medium-income individuals have the highest income utility at 43.72%, slightly higher than lower-income (43.24%) and higher-income (41.38%) groups.
+  
+- Age Group Analysis:The age group 35–45 has the highest income utility percentage at 48.63%, followed by 25–34 at 45.71%.
+  
+- Gender Insights:Male customers consistently show higher income utility percentages compared to female customers across all age groups.
+  
+- City Income vs. Spending:Mumbai leads not only in the number of customers but also in average spending (₹26,598.40), reflecting a strong economic engagement.
+    In contrast, Chennai has the lowest average spending at ₹15,961.53, correlating with its lower income utility percentage.
+
+
 
 
