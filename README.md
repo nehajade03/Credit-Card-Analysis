@@ -19,10 +19,10 @@ AtliQ Data Services has been tasked with analyzing a sample dataset of 4,000 cus
 
 The analysis should deliver data-driven recommendations that address the following objectives:
 
-    Identify customer segments with the highest potential for credit card adoption.
-    Understand spending patterns and preferences to design targeted rewards and benefits.
-    Evaluate regional differences and city-specific trends to optimize marketing strategies.
-    Highlight any gaps or opportunities in the current market that the new credit card can address.
+ - Identify customer segments with the highest potential for credit card adoption.
+ - Understand spending patterns and preferences to design targeted rewards and benefits.
+ - Evaluate regional differences and city-specific trends to optimize marketing strategies.
+ - Highlight any gaps or opportunities in the current market that the new credit card can address.
 
 The success of this pilot project and the acquisition of the full project depends on AtliQ Data Services' ability to deliver a compelling and insightful analysis that demonstrates a clear value proposition to Mitron Bank's strategy director and his team.
     
