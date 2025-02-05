@@ -75,10 +75,33 @@ The success of this pilot project and the acquisition of the full project depend
  - Total_Spend = SUM('fact_spends'[spend])
 
 ## **Data Visualization (Dashboard)**
-
+[live Dashboard](https://www.novypro.com/create_project/credit-card-analysis-2)
 ## Dashboard:
+![image](https://github.com/user-attachments/assets/fe9b0d33-ea9b-41e9-9a65-3536cc7ce7c3)
 
+![image](https://github.com/user-attachments/assets/9472efc1-0849-4f1d-8959-82944a52ae82)
 
+![image](https://github.com/user-attachments/assets/13feea06-4620-4558-8c8e-c90048ef192f)
+
+![image](https://github.com/user-attachments/assets/53bc64d1-e7fc-4df3-bd43-6e0ce4190be0)
+
+## Drill-Through Functionality in Dashboard
+To enhance data exploration, I implemented Drill-Through functionality in the dashboard, allowing users to interactively explore customer behavior and spending patterns. This feature enables detailed insights into customer segments, regions, payment methods, and spending categories, driving more informed decision-making.
+
+Key Drill-Through Scenarios:
+
+ - Customer Segmentation: View spending behavior, credit utilization, and payment methods for selected customer segments (e.g., High-Income, Middle-Income).
+ - City-Wise Spending: Analyze spending, credit card adoption, and trends in specific cities.
+ - Payment Method Insights: Explore how payment methods (Credit Card, Debit Card, UPI) impact spending.
+  - Category-Specific Spending: Analyze trends, top customers, and payment preferences within categories like Electronics and Dining.
+
+Benefits:
+
+    Provides stakeholders with granular insights into customer behavior.
+    
+    Supports targeted marketing and strategic decision-making.
+
+![image](https://github.com/user-attachments/assets/c372eb46-1544-4e37-9cc6-e7bfbfaf2c6c)
 
 ## **Insights**
 
