@@ -75,7 +75,8 @@ The success of this pilot project and the acquisition of the full project depend
  - Total_Spend = SUM('fact_spends'[spend])
 
 ## **Data Visualization (Dashboard)**
-[live Dashboard](https://www.novypro.com/create_project/credit-card-analysis-2)
+[live Dashboard](https://www.novypro.com/profile_about/neha--jade?Popup=memberProject&Data=1735275957322x811402919594289800)
+
 ## Dashboard:
 ![image](https://github.com/user-attachments/assets/fe9b0d33-ea9b-41e9-9a65-3536cc7ce7c3)
 
